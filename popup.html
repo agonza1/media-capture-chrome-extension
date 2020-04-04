@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Set Page Color Popup</title>
+  <title>Live Media Recorder</title>
   <style>
     body {
       overflow: hidden;
@@ -17,39 +17,29 @@
     div {
       cursor: pointer;
       text-align: center;
-      padding: 1px 3px;
+      padding: 5px 10px;
       font-family: sans-serif;
-      font-size: 0.8em;
-      width: 100px;
-      margin-top: 1px;
+      font-size: 4em;
+      width: 200px;
+      margin-top: 2px;
       background: #cccccc;
     }
     div:hover {
       background: #aaaaaa;
     }
-    #red {
+    .red-btn {
       border: 1px solid red;
       color: red;
     }
-    #blue {
-      border: 1px solid blue;
-      color: blue;
-    }
-    #green {
+    .green-btn {
       border: 1px solid green;
       color: green;
-    }
-    #yellow {
-      border: 1px solid yellow;
-      color: yellow;
     }
   </style>
   <script src="popup.js"></script>
 </head>
 <body>
-<div id="red">red</div>
-<div id="blue">blue</div>
-<div id="green">green</div>
-<div id="yellow">yellow</div>
+<div id="startRecord" class="green-btn">Start</div>
+<div id="stopRecord" class="red-btn">Stop</div>
 </body>
 </html>
